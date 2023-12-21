@@ -39,7 +39,7 @@ class LoginForm extends Component {
     event.preventDefault();
     const { username, password } = this.state;
     const userDetails = { username, password };
-    const url = "http://localhost:3002/login";
+    const url = "https://zithara-auth-karthik.onrender.com/login";
     const options = {
       method: "POST",
       headers: {
@@ -110,7 +110,10 @@ class LoginForm extends Component {
     return (
       <div className="login-form-container">
         <form className="form-container" onSubmit={this.submitForm}>
-          <h1 className="h1prop">Login Form</h1>
+          <h1 className="h1prop">
+            Zithara <br />
+            Login Form
+          </h1>
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
           <button type="submit" className="login-button">

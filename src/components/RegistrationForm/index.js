@@ -44,7 +44,7 @@ class RegistrationForm extends Component {
     const { username, email, password } = this.state;
     const userDetails = { username, email, password };
     console.log(username, email, password);
-    const url = "http://localhost:3002/register";
+    const url = "https://zithara-auth-karthik.onrender.com/register";
     const options = {
       method: "POST",
       headers: {
@@ -124,7 +124,7 @@ class RegistrationForm extends Component {
     return (
       <div className="login-form-container">
         <form className="form-container" onSubmit={this.submitForm}>
-          <h1 className="h1prop">Registration Form</h1>
+          <h1 className="h1prop">Zithara Registration Form</h1>
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
           <div className="input-container">{this.renderEmail()}</div>
